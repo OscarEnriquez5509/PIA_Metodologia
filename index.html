@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Seguridad Cibernética - Productos de Ciberseguridad</title>
+    <title>Productos de Ciberseguridad</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="carrito.js" defer></script>
 </head>
 <body>
     <header>
@@ -11,7 +12,7 @@
         <nav>
             <ul>
                 <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
             </ul>
         </nav>
     </header>
@@ -21,28 +22,25 @@
         <div class="producto">
             <h3>Software de Seguridad de Red</h3>
             <p>Protege tu red contra amenazas cibernéticas con nuestro software de seguridad de red avanzado.</p>
-            <a href="carrito.html?producto=red">Comprar</a>
+            <p>Precio: $50.00</p>
+            <button onclick="agregarAlCarrito('Software de Seguridad de Red', 50.00)">Comprar</button>
         </div>
         <div class="producto">
             <h3>Software de Seguridad de Datos</h3>
             <p>Mantén tus datos seguros con nuestro software de seguridad de datos de última generación.</p>
-            <a href="carrito.html?producto=datos">Comprar</a>
+            <p>Precio: $40.00</p>
+            <button onclick="agregarAlCarrito('Software de Seguridad de Datos', 40.00)">Comprar</button>
         </div>
         <div class="producto">
             <h3>Software de Seguridad de Servidores</h3>
             <p>Protege tus servidores críticos con nuestro software de seguridad de servidores confiable.</p>
-            <a href="carrito.html?producto=servidores">Comprar</a>
+            <p>Precio: $60.00</p>
+            <button onclick="agregarAlCarrito('Software de Seguridad de Servidores', 60.00)">Comprar</button>
         </div>
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¿Tienes alguna pregunta? Contáctanos para obtener más información.</p>
-        <a href="contacto.html">Contáctanos</a>
-    </section>
-
     <footer>
-        <p>&copy; 2023 ORYX Corp.</p>
+        <p>&copy; 2023 Tu Empresa de Ciberseguridad</p>
     </footer>
 </body>
 </html>
